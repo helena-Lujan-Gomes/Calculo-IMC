@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+                    <tr>
+                        <td id="red00">Abaixo do Peso</td>
+                        <td>Abaixo de 18,5</td>
+                    </tr>
+                    <tr>
+                        <td id="green">Peso Normal</td>
+                        <td>18,5 - 24,9</td>
+                    </tr>
+                    <tr>
+                        <td id="orange">Sobrepeso</td>
+                        <td>25 - 29,9</td>
+                    </tr>
+                    <tr>
+                        <td id="red01">Obesidade grau 1</td>
+                        <td>30 - 34,9</td>
+                    </tr>
+                    <tr>
+                        <td id="red02">Obesidade grau 2</td>
+                        <td>35 - 39,9</td>
+                    </tr>
+                    <tr>
+                        <td id="red03">Obesidade grau 3</td>
+                        <td>Maior ou igual a 40</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="input">
+                <h2>Cálculo IMC</h2>
+                <input type="text" id="name" placeholder="Digite seu nome">
+                <input type="number" id="weight" placeholder="Digite seu peso">
+                <input type="number" id="height" placeholder="Digite sua altura em metros">
+                <button type="button" onclick="calcularImc()">Calcular</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+                <div class="result">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/imc.js"></script>
+</body>
+
+</html>
